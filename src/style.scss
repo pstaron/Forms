@@ -1,0 +1,191 @@
+
+
+$primary-color: #181C32;
+$sec-color: #0090D7;
+$grey-color:#939393;
+$grey-color-Fields:#E3E3E3;
+$four-color:#F9F9F9;
+$red:#D3072A;
+$font-size: 18px;
+
+.container{
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    padding-top: 3%;
+  }
+
+.text-fields{
+    margin-left: auto;
+
+}
+.textFieldName, .subTask{
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.required{
+    color:#D3072A;
+}
+.isRequired{
+    float: right;
+    color: #D3072A;
+}
+.mainCode{
+  color: $primary-color
+}
+input[type=datetime-local], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid $grey-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    font-size:$font-size;
+    background-color: $four-color;
+    color:$grey-color;
+    
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid $grey-color;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    font-size: $font-size;
+    background-color: $four-color;
+    color:$grey-color;
+  }
+  .issueDescription textarea{
+    width: 100%;
+    height: auto;
+    min-height: 10rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid $grey-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: $font-size;
+    background:$four-color;
+    color:$grey-color;
+  }
+  .dropDowns{
+    margin-left: auto;
+  }
+  .textFieldName{
+    float: left;
+  }
+  input[type=datetime-local]::-webkit-calendar-picker-indicator {
+    //display: none;
+    //-webkit-appearance: none;
+    background-image: url("../calendar.png");
+    width: 5%;
+ 
+}
+.subTaskInput{
+  background-color:$grey-color-Fields !important;
+  
+}
+/* Dropdown styles */
+
+.customer{
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.dropdown {
+    max-width: 48%;
+    margin: 8px 8px 8px 2px;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding-left: 0%;
+    
+  }
+
+.submitButton{
+    text-align: center;
+    
+}
+.submitBtn{
+    background: $sec-color;
+    font-size: $font-size;
+    width: 100%;
+    border: none;
+    color: #fff;
+    align-items: center;
+    padding: 0.7em 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    text-align: center;
+}
+  .dropdown2{
+    max-width: 48%;
+    margin: 8px 8px 8px 0px;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding-left: 0%;
+    padding-right: 0%;
+    
+  }
+  .dropdown-btn {
+    background:$grey-color-Fields;
+    font-size: $font-size;
+    width: 100%;
+    border: none;
+    color:$grey-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  .dropdown-btn:hover {
+    border: 2px solid $sec-color;
+  }
+  .arrow {
+    border-left: 7px solid transparent;
+    border-right:7px solid transparent;
+    border-top: 8px solid  $sec-color;
+    transition: transform ease-in-out 0.3s;
+  }
+  .dropdown-content {
+    list-style: none;
+    position: absolute;
+    top: 3.2em;
+    left: 0rem;
+    padding-left: 0%;
+    width: 100%;
+  }
+  .dropdown-content li {
+    background: $grey-color;
+    border-radius: 0.5em;
+  }
+  .dropdown-content li:hover {
+    background: $grey-color;
+  }
+  .dropdown-content li a {
+    display: block;
+    padding: 0.7em 0.5em;
+    color: #000;
+    margin: 0.1em 0;
+    text-decoration: none;
+  }
+  .dropdown-content {
+    visibility: hidden;
+  }
+  .dropdown-btn:focus + .dropdown-content {
+    visibility: visible;
+  } 
+  .dropdown-btn:focus > .arrow {
+    transform: rotate(180deg);
+  }

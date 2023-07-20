@@ -1,0 +1,1 @@
+{"mappings":"ACGA;;;;AAIA","sources":["css/style.css","src/style.scss"],"sourcesContent":["body {\n  background-color: #aca8a8;\n}\n\n.dropdownServiceGroup {\n  background-color: red;\n}",null],"names":[],"version":3,"file":"index.b2625c6b.css.map","sourceRoot":"/__parcel_source_root/"}
